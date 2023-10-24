@@ -1,0 +1,6 @@
+.rounded-corner-box {
+    border-radius: 10px; /* Adjust the value to control the roundness of the corners */
+    background-color: #f0f0f0; /* Set the background color as needed */
+    padding: 20px; /* Add padding for content inside the box */
+  }
+  

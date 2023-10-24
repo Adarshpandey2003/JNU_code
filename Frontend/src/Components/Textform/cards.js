@@ -27,7 +27,7 @@ const Card = styled.div`
   background: white;
   border-radius: 20px;
   transition: 0.5s;
-  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.35);
 
   &:hover {
     height: 400px;
@@ -47,7 +47,7 @@ const ImageBox = styled.div`
   ${Card}:hover & {
     top: -100px;
     transform: scale(0.75);
-    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.45);
   }
 `;
 

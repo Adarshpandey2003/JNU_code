@@ -215,7 +215,7 @@ export default function Navbar(props) {
 
                             </MDBNavbarNav>
                             <div className="d-flex">
-                                <FontAwesomeIcon className="my-2 mx-2" onClick={props.toggleMode} icon={faMoon} beat size="lg" style={{ color: "#c86b85", cursor: 'pointer' }} />
+                                <FontAwesomeIcon className="my-2 mx-2" onClick={props.toggleMode} icon={faMoon}  size="lg" style={{ color: "#c86b85", cursor: 'pointer' }} />
                                 {/* <div className = " rounded mx-2 my-2" onClick = {props.toggleMode} style={{height:"20px", width:"20px", backgroundColor:'#ffb5b5'}}></div> */}
 
                                 <FontAwesomeIcon className="my-2 mx-2" onClick={props.handleLogout} icon={faPowerOff} size="lg" />

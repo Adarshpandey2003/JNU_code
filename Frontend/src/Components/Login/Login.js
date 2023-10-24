@@ -74,9 +74,10 @@ function Login({ onLogin }) {
                   required
                 />
                 {errorMessages.pass && <div className="text-danger">{errorMessages.pass}</div>}
-                <MDBBtn outline className='mx-5 px-5' color='white' size='lg' type='submit'>
+                <MDBBtn outline className='mx-5 px-5' color='white' size='lg' type='submit' style={{backgroundColor: 'pink'}}>
                   Login
                 </MDBBtn>
+
               </form>
             </MDBCardBody>
           </MDBCard>

@@ -27,7 +27,8 @@ export default function App(props) {
     <MDBFooter className='text-center text-white ' 
     style={{ 
       backgroundColor:props.Mode=== 'dark'?'#24527a':'#c86b85',
-      fontFamily:"URW Chancery L, cursive" 
+      fontFamily:"URW Chancery L, cursive" ,
+      
       }}>
       {/* <MDBContainer className='p-4' >
         <section className=''>
@@ -59,7 +60,7 @@ export default function App(props) {
             href='https://www.facebook.com/ICMROrganisation'
             role='button'
           >
-            <FontAwesomeIcon icon={faFacebook} beat size="lg" />
+            <FontAwesomeIcon icon={faFacebook}  size="lg" />
             <MDBIcon fab className='fab fa-facebook-f' />
           </MDBBtn>
 
@@ -72,7 +73,7 @@ export default function App(props) {
             href='https://twitter.com/ICMRDELHI'
             role='button'
           >
-            <FontAwesomeIcon icon={faTwitter} beat size="lg" />
+            <FontAwesomeIcon icon={faTwitter}  size="lg" />
             <MDBIcon fab className='fa-twitter' />
           </MDBBtn>
 
@@ -85,7 +86,7 @@ export default function App(props) {
             href='https://main.icmr.nic.in/'
             role='button'
           >
-            <FontAwesomeIcon icon={faGoogle} beat size="lg" />
+            <FontAwesomeIcon icon={faGoogle}  size="lg" />
             <MDBIcon fab className='fa-google' />
           </MDBBtn>
 
@@ -98,7 +99,7 @@ export default function App(props) {
             href='https://www.instagram.com/icmrorganisation/'
             role='button'
           >
-            <FontAwesomeIcon icon={faInstagram} beat size="lg" />
+            <FontAwesomeIcon icon={faInstagram}  size="lg" />
             <MDBIcon fab className='fa-instagram' />
           </MDBBtn>
 
@@ -111,7 +112,7 @@ export default function App(props) {
             href='https://www.linkedin.com/company/icmrorganization'
             role='button'
           >
-            <FontAwesomeIcon icon={faLinkedin} beat size="lg" />
+            <FontAwesomeIcon icon={faLinkedin}  size="lg" />
             <MDBIcon fab className='fa-linkedin' />
           </MDBBtn>
 
@@ -124,7 +125,7 @@ export default function App(props) {
             href='https://www.youtube.com/c/icmrorganisation'
             role='button'
           >
-            <FontAwesomeIcon icon={faYoutube} beat size="lg" />
+            <FontAwesomeIcon icon={faYoutube}  size="lg" />
             <MDBIcon fab className='fa-youtube' />
           </MDBBtn>
         </section>

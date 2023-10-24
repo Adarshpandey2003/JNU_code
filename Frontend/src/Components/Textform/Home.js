@@ -7,7 +7,7 @@ import Cards from './cards'
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
 // import Stack from 'react-bootstrap/Stack';
-
+import './home-css.css'; // Import the CSS file
 
 
 export default function ControlledCarousel(props) {
@@ -31,42 +31,37 @@ export default function ControlledCarousel(props) {
 
     return (
         <>
-            <div className='container-fluid mx-0 my-0' style={mystyle}>
-            <Carousel>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src="Images/Untitled12.jpeg"
-                            alt="ICMR Img"
-                            width="1500" height="400"
-                        />
-
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src="Images/Carousel2.jpeg"
-                            alt="Second slide"
-                            width="1500" height="400"
-                        />
-
-
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src="Images/Untitled10.jpeg"
-                            alt="Third slide"
-                            width="1500" height="400"
-                        />
-
-
-                    </Carousel.Item>
-                </Carousel>
+            <div className='container-fluid mx-0 my-0 ' style={mystyle}>
+            <Carousel style={{  maxWidth: '1800px', margin: '20px 10px 20px 40px' }}>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="Images/Untitled12.jpeg"
+          alt="ICMR Img"
+          style={{ objectFit: 'cover', height: '400px',borderRadius:'10px' }}
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="Images/Carousel2.jpeg"
+          alt="Second slide"
+          style={{ objectFit: 'cover', height: '400px', borderRadius:'10px'}}
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="Images/Untitled10.jpeg"
+          alt="Third slide"
+          style={{ objectFit: 'cover', height: '400px', borderRadius:'10px' }}
+        />
+      </Carousel.Item>
+    </Carousel>
 
 
 
-                {/* Middle bar */}
+                {/* Middle bar
                 <div className='container py-3 border-2'
                     style={{ backgroundColor: props.Mode === 'dark' ? '#132743' : '#F8F8FF' }}>
                     <Card className=" mx-2 border-2 "
@@ -83,7 +78,34 @@ export default function ControlledCarousel(props) {
                             }}>
                             <h4>JNU-ICMR Analytics Centre</h4></Card.Body>
                     </Card>
+                </div> */}
+                {/* Middle bar */}
+                <div className='container py-3 border-2 rounded'
+                    style={{ 
+                        backgroundColor: props.Mode === 'dark' ? '#132743' : '#F8F8FF',
+                        borderRadius: '10px', // Adjust the value to control the roundness of the corners
+                    }}
+                >
+                    <Card className="mx-2 border-2"
+                        style={{
+                            borderColor: props.Mode === 'dark' ? '#F8F8FF' : '#F8F8FF',
+                            textAlign: "center",
+                            borderRadius: '10px', // Adjust the value to control the roundness of the corners
+                        }}
+                    >
+                        <Card.Body
+                            style={{
+                                backgroundColor: props.Mode === 'dark' ? '#24527a' : '#c86b85',
+                                color: props.Mode === 'dark' ? '#F8F8FF' : '#F9F0F2',
+                                fontFamily: "Calibri",
+                                borderRadius: '10px', // Adjust the value to control the roundness of the corners
+                            }}
+                        >
+                            <h4>JNU-ICMR Analytics Centre</h4>
+                        </Card.Body>
+                    </Card>
                 </div>
+
 
 
 
@@ -98,7 +120,7 @@ export default function ControlledCarousel(props) {
 
                     <div>
 
-                        <Cards />
+                        <Cards/>
                     </div>
 
 
